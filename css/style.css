@@ -1,0 +1,19 @@
+.img-thumbnail {
+  max-height: 12rem;
+}
+
+#image-grid button{
+  padding:0;
+  margin: 0;
+  border-style: none;
+}
+
+.modal-body {
+  display: flex;
+  gap: 1rem;
+}
+
+#modal-2 {
+  border-style: solid;
+  padding: 1rem;
+}
