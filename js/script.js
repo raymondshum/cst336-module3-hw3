@@ -1,17 +1,31 @@
+document.querySelector("#top").addEventListener("click",function(){
+  $("header").slideToggle();
+  $("#top").toggle();
+  $("footer").toggleClass('vis');
+  // $("#gallery").css("margin-bottom","0rem");
+  $("#image-grid").html("");
+  $("#result-txt").html("");
+})
+
 document
   .querySelector("#search-button")
   .addEventListener("click", function (event) {
     event.preventDefault();
 
     if (validateSearch()) {
-      $("#image-grid").html("");
+
       let rawSearch = $("#search-field").val();
       let search = rawSearch.trim().replace(/\s/g, "%20");
       let url = `https://images-api.nasa.gov/search?q=${search}&media_type=image`;
       populateImages(url, rawSearch);
+      $("header").slideToggle();
+      $("#top").toggle();
+      $("footer").toggleClass('vis');
+      // $("#gallery").css("margin-bottom","5rem");
     } else {
       alert("Search string cannot be blank.");
     }
+
   });
 
 async function populateImages(url, search) {
@@ -19,7 +33,7 @@ async function populateImages(url, search) {
   data = await response.json();
 
   if (data.collection.items.length == 0) {
-    $("#image-grid").html(
+    $("#result-txt").html(
       `<h3>The search term "${search}" returned no results.</h3>`
     );
   } else {
@@ -50,7 +64,6 @@ async function populateImages(url, search) {
           );
           console.log("click");
         });
-        
     }
   }
 }

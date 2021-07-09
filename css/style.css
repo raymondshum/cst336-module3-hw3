@@ -34,7 +34,7 @@ header {
   text-align: center;
 }
 
-header h1, h3 {
+header h1, header h3 {
   color:white;
   text-shadow: 4px 4px 6px black;
 }
@@ -43,21 +43,43 @@ h1, h3 {
   font-family: 'Oswald', sans-serif;
 }
 
-hr {
-  color: white;
-}
-
 form {
   justify-content: space-around;
 
 }
 
-
+#top{
+  display:none;
+  background-color: white;
+}
 
 body {
-  /* background: black; */
+  position: relative;
+  min-height: 100vh;
 }
 
-img {
-  /* border-style: solid; */
+
+footer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+footer img{
+  max-height: 5rem;
+}
+
+#footer-txt{
+  text-align: right;
+  margin: auto 0;
+}
+
+.vis {
+  display: none !important;
+}
+
+body {
+  background-image: url("../img/geometric-leaves.png");
+  background-repeat: repeat;
+}
+
