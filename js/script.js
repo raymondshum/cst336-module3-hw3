@@ -38,7 +38,7 @@ async function populateImages(url, search) {
       document
         .querySelector(`#${buttonId}`)
         .addEventListener("click", function () {
-          $("#modal-img").html(`<img src="${img}">`);
+          $("#modal-img").html(`<img class="rounded img-fluid" src="${img}">`);
           $("#img-title").html(
             `${data.collection.items[`${i}`].data[0].title}`
           );

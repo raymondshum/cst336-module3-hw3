@@ -10,10 +10,31 @@
 
 .modal-body {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
+  text-align: center;
 }
 
 #modal-2 {
+  text-align: left;
   border-style: solid;
   padding: 1rem;
+  overflow-wrap: break-word;
+}
+
+header {
+  height:100vh;
+  background: url("../img/header.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  color:white;
+}
+
+form {
+  /* background-color:rgba(255, 255, 255, 0) !important; */
+  /* border-style:none !important; */
+
+
 }
