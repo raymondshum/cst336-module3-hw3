@@ -1,85 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Quattrocento&display=swap');
-
-/* font-family: 'Oswald', sans-serif;
-font-family: 'Quattrocento', serif; */
-
-#image-grid button{
-  padding:0;
-  margin: 0;
-  border-style: none;
+#footer-txt
+{
+	margin: auto 0;
+	text-align: right;
 }
-
-.modal-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  text-align: center;
+#modal-2
+{
+	border-style: solid;
+	overflow-wrap: break-word;
+	padding: 1rem;
+	text-align: left;
 }
-
-#modal-2 {
-  text-align: left;
-  border-style: solid;
-  padding: 1rem;
-  overflow-wrap: break-word;
+#top
+{
+	background-color: white;
+	display: none;
 }
-
-header {
-  height:100vh;
-  background: url("../img/header.jpg") no-repeat center center fixed;
-  background-size: cover;
-
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.modal-body
+{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	text-align: center;
 }
-
-header h1, header h3 {
-  color:white;
-  text-shadow: 4px 4px 6px black;
+.vis
+{
+	display: none !important;
 }
-
-h1, h3 {
-  font-family: 'Oswald', sans-serif;
+#image-grid button
+{
+	border-style: none;
+	margin: 0;
+	padding: 0;
 }
-
-form {
-  justify-content: space-around;
-
+body
+{
+	min-height: 100vh;
+	position: relative;
 }
-
-#top{
-  display:none;
-  background-color: white;
+body
+{
+	background-image: url("../img/geometric-leaves.png");
+	background-repeat: repeat;
 }
-
-body {
-  position: relative;
-  min-height: 100vh;
+footer
+{
+	display: flex !important;
+	flex-direction: row;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: .8rem;
+	justify-content: space-between;
 }
-
-
-footer {
-  display: flex !important;
-  flex-direction: row;
-  justify-content: space-between;
+footer img
+{
+	max-height: 5rem;
 }
-
-footer img{
-  max-height: 5rem;
+form
+{
+	justify-content: space-around;
 }
-
-#footer-txt{
-  text-align: right;
-  margin: auto 0;
+h1, h3
+{
+	font-family: 'Oswald', sans-serif;
 }
-
-.vis {
-  display: none !important;
+header
+{
+	background: url("../img/header.jpg") no-repeat center center fixed;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
 }
-
-body {
-  background-image: url("../img/geometric-leaves.png");
-  background-repeat: repeat;
+header h1, header h3
+{
+	color: white;
+	text-shadow: 4px 4px 6px black;
 }
-
+hr
+{
+	background-color: white;
+	border: none;
+	height: 2px;
+	padding: 0;
+}
