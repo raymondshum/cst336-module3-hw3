@@ -1,6 +1,7 @@
-.img-thumbnail {
-  max-height: 12rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Quattrocento&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Quattrocento', serif; */
 
 #image-grid button{
   padding:0;
@@ -26,15 +27,37 @@ header {
   height:100vh;
   background: url("../img/header.jpg") no-repeat center center fixed;
   background-size: cover;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-h1 {
+header h1, h3 {
   color:white;
+  text-shadow: 4px 4px 6px black;
+}
+
+h1, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+hr {
+  color: white;
 }
 
 form {
-  /* background-color:rgba(255, 255, 255, 0) !important; */
-  /* border-style:none !important; */
+  justify-content: space-around;
+
+}
 
 
+
+body {
+  /* background: black; */
+}
+
+img {
+  /* border-style: solid; */
 }

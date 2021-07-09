@@ -32,7 +32,7 @@ async function populateImages(url, search) {
       let metadata = `${data.collection.items[`${i}`].data[0]}`;
 
       $("#image-grid").append(
-        `<div class="col"><button id="${buttonId}" class="img-btn" data-bs-toggle="modal" data-bs-target="#image-modal"><img class="img-thumbnail" src="${img}"></button></div>`
+        `<div class="card"><button id="${buttonId}" class="img-btn" data-toggle="modal" data-target="#image-modal"><img class="card-img-top" src="${img}"></button></div>`
       );
 
       document
@@ -48,7 +48,9 @@ async function populateImages(url, search) {
           $("#img-description").html(
             `${data.collection.items[`${i}`].data[0].description}`
           );
+          console.log("click");
         });
+        
     }
   }
 }
